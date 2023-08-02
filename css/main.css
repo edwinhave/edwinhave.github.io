@@ -81,4 +81,8 @@ body {
 }
 .container2:hover {
   --_p: 30% ;
+}
+
+footer p {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
