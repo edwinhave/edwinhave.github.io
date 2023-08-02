@@ -1,0 +1,93 @@
+*{
+    font-family: "sans-serif","cursive","arial";
+
+}
+body{
+    background-color: #F1F1F2;
+}
+
+.container {
+    width: 1000px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    background-color: #53389F;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+
+
+nav{
+    font-size: 35px;
+}
+
+.navbar {
+
+    li{ --s: 0.1em;   /* the thickness of the line */
+        --c: #0fb9f1; /* the color */
+
+        color: #0000;
+        padding-bottom: var(--s);
+        background:
+          linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+          linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+        -webkit-background-clip: text,padding-box;
+                background-clip: text,padding-box;
+        transition: 0.5s;
+        text-decoration: none;
+        display: inline;
+        &:hover{
+            --_p: 100%
+        }
+    } a{
+        text-decoration: none;
+        color: #EFE3F7;
+        &:hover{
+            color:#0fb9f1 ;
+        }
+    }
+
+}
+}    .menu li{
+    margin-right: 50px;
+}
+
+.container2 {
+
+    width: 1000px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    background-color: #6941C6;
+    border-radius: 15px;
+    justify-content: center;
+    padding: auto;
+    display: flex;
+    img{
+        margin-top: 25px;
+        padding: 50px;
+        width: 20%;
+        float: left;
+        border-radius: 50%;
+    }
+  h3{
+        word-spacing: 10px;
+        font-family: "Tahoma";
+        display: flex;
+        color: #EFE3F7;
+        padding: 10px;
+        font-size: 30px;
+    }
+    .satu, .dua, .tiga, .pat{
+        --c: #1095c1;
+        --a:#EFE3F7;/* the color */
+  
+        color: #0000;
+        background:
+          linear-gradient(90deg,#fff 50%,var(--a) 0) calc(100% - var(--_p,0%))/200% 100%,
+          linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;
+        -webkit-background-clip: text,padding-box;
+                background-clip: text,padding-box;
+        transition: 0.5s;
+    }&:hover{
+        --_p: 30%
+    }
+}
