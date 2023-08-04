@@ -79,7 +79,7 @@ body {
   background-clip: text, padding-box;
   transition: 0.5s;
 }
-.container2:hover {
+.container2 .satu:hover, .container2 .dua:hover, .container2 .tiga:hover, .container2 .pat:hover {
   --_p: 30% ;
 }
 

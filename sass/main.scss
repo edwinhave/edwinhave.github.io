@@ -79,7 +79,7 @@ nav{
     .satu, .dua, .tiga, .pat{
         --c: #1095c1;
         --a:#EFE3F7;/* the color */
-  
+
         color: #0000;
         background:
           linear-gradient(90deg,#fff 50%,var(--a) 0) calc(100% - var(--_p,0%))/200% 100%,
@@ -87,9 +87,10 @@ nav{
         -webkit-background-clip: text,padding-box;
                 background-clip: text,padding-box;
         transition: 0.5s;
-    }&:hover{
+    &:hover{
         --_p: 30%
     }
+}
 }footer {
     p{
         text-align: center;}
