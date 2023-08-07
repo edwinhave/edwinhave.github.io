@@ -5,9 +5,31 @@
 body{
     background-color: #F1F1F2;
 }
+@mixin paragraf {
+    word-spacing: 10px;
+    font-family: "Tahoma";
+    display: flex;
+    color: #EFE3F7;
+    padding: 10px 10px 10px 10px;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+@mixin round-image {
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 50%;
+    float: left;
+    border-radius: 50%;
+    transition: .5s ease;
+    &:hover{
+        box-shadow: 20px 20px 20px #0fb9f1;
+        transition: .5s ease;
+        }
+}
 
 .container {
-    width: 1000px;
+    width: 1600px;
     margin: 10px auto;
     box-sizing: border-box;
     background-color: #53389F;
@@ -53,7 +75,7 @@ nav{
 
 .container2 {
 
-    width: 1000px;
+    width: 1600px;
     margin: 10px auto;
     box-sizing: border-box;
     background-color: #6941C6;
@@ -61,12 +83,15 @@ nav{
     justify-content: center;
     padding: auto;
     display: flex;
+    &:hover{
+        transition: 1s;
+        background-color: #7d4fe9;
+    }
+    p{
+        @include paragraf;
+    }
     img{
-        margin-top: 25px;
-        padding: 50px;
-        width: 20%;
-        float: left;
-        border-radius: 50%;
+        @include round-image;
     }
   h3{
         word-spacing: 10px;
@@ -74,7 +99,7 @@ nav{
         display: flex;
         color: #EFE3F7;
         padding: 10px;
-        font-size: 30px;
+        font-size: 60px;
     }
     .satu, .dua, .tiga, .pat{
         --c: #1095c1;
@@ -82,16 +107,17 @@ nav{
 
         color: #0000;
         background:
-          linear-gradient(90deg,#fff 50%,var(--a) 0) calc(100% - var(--_p,0%))/200% 100%,
+          linear-gradient(90deg,#fff 100%,var(--a) 0) calc(100% - var(--_p,0%))/200% 100%,
           linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;
         -webkit-background-clip: text,padding-box;
                 background-clip: text,padding-box;
         transition: 0.5s;
     &:hover{
-        --_p: 30%
+        --_p: 50%
     }
 }
+
+
 }footer {
-    p{
-        text-align: center;}
+        text-align: center;
 }

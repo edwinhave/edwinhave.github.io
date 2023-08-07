@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  width: 1000px;
+  width: 1600px;
   margin: 10px auto;
   box-sizing: border-box;
   background-color: #53389F;
@@ -46,7 +46,7 @@ body {
 }
 
 .container2 {
-  width: 1000px;
+  width: 1600px;
   margin: 10px auto;
   box-sizing: border-box;
   background-color: #6941C6;
@@ -55,12 +55,30 @@ body {
   padding: auto;
   display: flex;
 }
+.container2:hover {
+  transition: 1s;
+  background-color: #7d4fe9;
+}
+.container2 p {
+  word-spacing: 10px;
+  font-family: "Tahoma";
+  display: flex;
+  color: #EFE3F7;
+  padding: 10px 10px 10px 10px;
+  margin-left: 30px;
+  font-size: 30px;
+}
 .container2 img {
   margin-top: 25px;
-  padding: 50px;
-  width: 20%;
+  margin-right: 25px;
+  width: 50%;
   float: left;
   border-radius: 50%;
+  transition: 0.5s ease;
+}
+.container2 img:hover {
+  box-shadow: 20px 20px 20px #0fb9f1;
+  transition: 0.5s ease;
 }
 .container2 h3 {
   word-spacing: 10px;
@@ -68,21 +86,21 @@ body {
   display: flex;
   color: #EFE3F7;
   padding: 10px;
-  font-size: 30px;
+  font-size: 60px;
 }
 .container2 .satu, .container2 .dua, .container2 .tiga, .container2 .pat {
   --c: #1095c1;
   --a:#EFE3F7; /* the color */
   color: rgba(0, 0, 0, 0);
-  background: linear-gradient(90deg, #fff 50%, var(--a) 0) calc(100% - var(--_p, 0%))/200% 100%, linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) 100% no-repeat;
+  background: linear-gradient(90deg, #fff 100%, var(--a) 0) calc(100% - var(--_p, 0%))/200% 100%, linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) 100% no-repeat;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
   transition: 0.5s;
 }
 .container2 .satu:hover, .container2 .dua:hover, .container2 .tiga:hover, .container2 .pat:hover {
-  --_p: 30% ;
+  --_p: 50% ;
 }
 
-footer p {
+footer {
   text-align: center;
 }/*# sourceMappingURL=main.css.map */
