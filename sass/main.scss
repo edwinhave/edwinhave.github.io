@@ -13,6 +13,7 @@ body{
     padding: 10px 10px 10px 10px;
     margin-left: 30px;
     font-size: 30px;
+    text-align: center;
 }
 
 @mixin round-image {
@@ -26,6 +27,45 @@ body{
         box-shadow: 20px 20px 20px #0fb9f1;
         transition: .5s ease;
         }
+}
+
+@mixin image-media{
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+    transition: .5s ease;
+    &:hover{
+        box-shadow: 10px 10px 10px #0fb9f1;
+        transition: .5s ease;
+        }
+}
+
+@mixin kotak-tema {
+    width: 1600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    background-color: #6941C6;
+    border-radius: 15px;
+    justify-content: center;
+    padding: auto;
+    display: flex;
+    &:hover{
+        transition: 1s;
+        background-color: #7d4fe9;
+    }
+}
+
+@mixin kotak-kecil {
+    width: 400px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    background-color: #7d4fe9;
+    border-radius: 15px;
+    justify-content: center;
+    padding: auto;
+    display: flex;
 }
 
 .container {
@@ -69,7 +109,8 @@ nav{
     }
 
 }
-}    .menu li{
+}
+.menu li{
     margin-right: 50px;
 }
 
@@ -102,7 +143,7 @@ nav{
         font-size: 60px;
     }
     .satu, .dua, .tiga, .pat{
-        --c: #1095c1;
+        --c: #13a9db;
         --a:#EFE3F7;/* the color */
 
         color: #0000;
@@ -113,11 +154,24 @@ nav{
                 background-clip: text,padding-box;
         transition: 0.5s;
     &:hover{
-        --_p: 50%
+        --_p: 60%
     }
 }
 
+}
 
-}footer {
+.kotak-tema{
+    @include paragraf;
+    @include kotak-tema;
+    img {
+        @include image-media;
+    }
+
+}
+
+.kotak-kecil {
+    @include kotak-kecil;
+}
+footer {
         text-align: center;
 }

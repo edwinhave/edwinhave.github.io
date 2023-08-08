@@ -67,6 +67,7 @@ body {
   padding: 10px 10px 10px 10px;
   margin-left: 30px;
   font-size: 30px;
+  text-align: center;
 }
 .container2 img {
   margin-top: 25px;
@@ -89,7 +90,7 @@ body {
   font-size: 60px;
 }
 .container2 .satu, .container2 .dua, .container2 .tiga, .container2 .pat {
-  --c: #1095c1;
+  --c: #13a9db;
   --a:#EFE3F7; /* the color */
   color: rgba(0, 0, 0, 0);
   background: linear-gradient(90deg, #fff 100%, var(--a) 0) calc(100% - var(--_p, 0%))/200% 100%, linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) 100% no-repeat;
@@ -98,7 +99,53 @@ body {
   transition: 0.5s;
 }
 .container2 .satu:hover, .container2 .dua:hover, .container2 .tiga:hover, .container2 .pat:hover {
-  --_p: 50% ;
+  --_p: 60% ;
+}
+
+.kotak-tema {
+  word-spacing: 10px;
+  font-family: "Tahoma";
+  display: flex;
+  color: #EFE3F7;
+  padding: 10px 10px 10px 10px;
+  margin-left: 30px;
+  font-size: 30px;
+  text-align: center;
+  width: 1600px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  background-color: #6941C6;
+  border-radius: 15px;
+  justify-content: center;
+  padding: auto;
+  display: flex;
+}
+.kotak-tema:hover {
+  transition: 1s;
+  background-color: #7d4fe9;
+}
+.kotak-tema img {
+  margin-top: 25px;
+  margin-right: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+  transition: 0.5s ease;
+}
+.kotak-tema img:hover {
+  box-shadow: 10px 10px 10px #0fb9f1;
+  transition: 0.5s ease;
+}
+
+.kotak-kecil {
+  width: 400px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  background-color: #7d4fe9;
+  border-radius: 15px;
+  justify-content: center;
+  padding: auto;
+  display: flex;
 }
 
 footer {
