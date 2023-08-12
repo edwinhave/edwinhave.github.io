@@ -3,14 +3,14 @@
 }
 
 body {
-  background-color: #F1F1F2;
+  background-color: #dedef0;
 }
 
 .container {
   width: 100%;
   margin: 10px auto;
   box-sizing: border-box;
-  background-color: #53389F;
+  background-color: rgb(120, 180, 230);
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ body {
 }
 .container .navbar li {
   --s: 0.1em; /* the thickness of the line */
-  --c: #0fb9f1; /* the color */
+  --c: #dedef0; /* the color */
   color: rgba(0, 0, 0, 0);
   padding-bottom: var(--s);
   background: linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%, linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
@@ -35,10 +35,10 @@ body {
 }
 .container .navbar a {
   text-decoration: none;
-  color: #EFE3F7;
+  color: #686565;
 }
 .container .navbar a:hover {
-  color: #0fb9f1;
+  color: #dedef0;
 }
 
 .menu li {
@@ -49,7 +49,7 @@ body {
   width: 100%;
   margin: 10px auto;
   box-sizing: border-box;
-  background-color: #6941C6;
+  background-color: rgb(120, 180, 230);
   border-radius: 15px;
   justify-content: center;
   padding: auto;
@@ -57,13 +57,13 @@ body {
 }
 .container2:hover {
   transition: 1s;
-  background-color: #7d4fe9;
+  background-color: rgb(86, 161, 223);
 }
 .container2 p {
   word-spacing: 10px;
   font-family: "Tahoma";
   display: flex;
-  color: #EFE3F7;
+  color: #686565;
   padding: 10px 10px 10px 10px;
   margin-left: 30px;
   font-size: 30px;
@@ -78,7 +78,7 @@ body {
   transition: 0.5s ease;
 }
 .container2 img:hover {
-  box-shadow: 20px 20px 20px #0fb9f1;
+  box-shadow: 20px 20px 20px rgb(54, 86, 223);
   transition: 0.5s ease;
 }
 .container2 h3 {
@@ -90,7 +90,7 @@ body {
   font-size: 60px;
 }
 .container2 .satu, .container2 .dua, .container2 .tiga, .container2 .pat {
-  --c: #13a9db;
+  --c: rgb(223, 122, 86);
   --a:#EFE3F7; /* the color */
   color: rgba(0, 0, 0, 0);
   background: linear-gradient(90deg, #fff 100%, var(--a) 0) calc(100% - var(--_p, 0%))/200% 100%, linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) 100% no-repeat;
@@ -106,7 +106,7 @@ body {
   word-spacing: 10px;
   font-family: "Tahoma";
   display: flex;
-  color: #EFE3F7;
+  color: #686565;
   padding: 10px 10px 10px 10px;
   margin-left: 30px;
   font-size: 30px;
@@ -114,7 +114,7 @@ body {
   width: 100%;
   margin: 10px auto;
   box-sizing: border-box;
-  background-color: #6941C6;
+  background-color: rgb(120, 180, 230);
   border-radius: 15px;
   justify-content: center;
   padding: auto;
@@ -122,28 +122,25 @@ body {
 }
 .kotak-tema:hover {
   transition: 1s;
-  background-color: #7d4fe9;
+  background-color: rgb(86, 161, 223);
 }
 .kotak-tema img {
   margin-top: 25px;
   margin-right: 25px;
-  width: 100px;
-  height: 100px;
-  border-radius: 25%;
+  width: 40%;
+  border-radius: 30%;
   transition: 0.5s ease;
 }
 .kotak-tema img:hover {
-  box-shadow: 10px 10px 10px #0fb9f1;
+  box-shadow: 10px 10px 10px rgb(199, 106, 253);
   transition: 0.5s ease;
 }
 
 .kotak-kecil {
-  width: 400px;
+  width: 100%;
   margin: 10px auto;
   box-sizing: border-box;
-  background-color: #7d4fe9;
   border-radius: 15px;
-  justify-content: center;
   padding: auto;
   display: flex;
 }
